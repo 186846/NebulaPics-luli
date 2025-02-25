@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.luli.nebulapics.mapper.UserActionMapper">
+
+    <resultMap id="BaseResultMap" type="com.luli.nebulapics.model.entity.UserAction">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="userId" column="userId" jdbcType="BIGINT"/>
+            <result property="replyId" column="replyId" jdbcType="BIGINT"/>
+            <result property="action" column="action" jdbcType="OTHER"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,userId,replyId,
+        action,createTime
+    </sql>
+</mapper>
