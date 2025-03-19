@@ -12,8 +12,8 @@ spring:
 
   mail:
     host: smtp.qq.com
-    username: 1549717418@qq.com
-    password: hzkkjdyfoqplbach
+    username: #自己的邮箱
+    password: #自己的邮箱钥匙
     nickname: liuleliule
     port: 465
     protocol: smtp
@@ -35,15 +35,15 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/nebulapics
-    username: root
-    password: 1234
+    username: # 账户
+    password: # 密码
   # Redis 配置
   redis:
     database: 0
-    host: 124.221.185.53
+    host: # 127.0.0.1  或 远程redis服务器地址
     port: 6379
     timeout: 5000
-    password: 123456
+    password: # 密码
   # Session 配置
   session:
     store-type: redis
@@ -61,8 +61,8 @@ spring:
         type: com.zaxxer.hikari.HikariDataSource
         driver-class-name: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://localhost:3306/nebulapics
-        username: root
-        password: 1234
+        username: # 账户
+        password: # 密码
     rules:
       sharding:
         tables:
@@ -113,13 +113,13 @@ knife4j:
 # 对象存储配置（需要从腾讯云获取）
 cos:
   client:
-    host: https://liuleliule.online
-    secretId: AKIDHRQFsHSP8cCev20qW4ThmlX5RjvvSnCX
-    secretKey: jKjwwnT0SkbIo7E86wa2JPHvQnxLWXPR
-    region: ap-guangzhou
-    bucket: luli-1319967679
+    host: # 主机
+    secretId: # 密码id
+    secretKey: # 密钥
+    region: ap-guangzho # 地区
+    bucket: # 存储桶 
 
 
 ## 阿里云 AI 配置
 aliYunAi:
-  apiKey: sk-10850ed5082c4fd1874c195f1912fe3e
+  apiKey: # 密钥
